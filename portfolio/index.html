@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onion Tunes</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap');
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: #fff;
+    color: #514b58;
+    font-family: "Nunito", Arial, sans-serif;
+  }
+
+  .hero {
+    height: 253px;
+    background: #302936;
+    position: relative;
+  }
+
+  .logo {
+    position: absolute;
+    width: 270px;
+    height: auto;
+    left: 50%;
+    bottom: -48px;
+    transform: translateX(-50%);
+    z-index: 2;
+  }
+
+  main {
+    width: min(960px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 92px 0 80px;
+    text-align: center;
+  }
+
+  h1 {
+    margin: 0 0 40px;
+    font-size: clamp(42px, 6vw, 60px);
+    line-height: 1.05;
+    font-weight: 900;
+    letter-spacing: -2px;
+    color: #5b5561;
+  }
+
+  .intro {
+    max-width: 900px;
+    margin: 0 auto 35px;
+    font-size: clamp(21px, 3vw, 34px);
+    line-height: 1.42;
+    color: #85808a;
+    font-weight: 400;
+  }
+
+  .listen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 101px;
+    margin: 0 auto 53px;
+    border-radius: 55px;
+    background: #8d5bb0;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(31px, 4vw, 48px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    transition: transform .15s, filter .15s;
+  }
+
+  .listen:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.05);
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .link {
+    min-height: 101px;
+    width: 100%;
+    padding: 12px 42px;
+    border-radius: 52px;
+    background: #f0ddfb;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #4e4657;
+    text-align: left;
+    font-size: clamp(25px, 3.2vw, 36px);
+    font-weight: 400;
+    transition: transform .15s, background .15s;
+  }
+
+  .link:hover {
+    transform: translateY(-2px);
+    background: #ead1f8;
+  }
+
+  .icon {
+    width: 82px;
+    height: 70px;
+    object-fit: contain;
+    flex: 0 0 82px;
+    margin-right: 52px;
+  }
+
+  .discord {
+    width: 83px;
+  }
+
+  .site-logo {
+    width: 82px;
+  }
+
+  @media (max-width: 650px) {
+    .hero { height: 200px; }
+
+    .logo {
+      width: 210px;
+      bottom: -38px;
+    }
+
+    main {
+      width: min(94%, 960px);
+      padding-top: 72px;
+    }
+
+    h1 {
+      margin-bottom: 28px;
+      letter-spacing: -1px;
+    }
+
+    .intro {
+      margin-bottom: 28px;
+    }
+
+    .listen {
+      min-height: 78px;
+      margin-bottom: 34px;
+    }
+
+    .link {
+      min-height: 78px;
+      padding: 10px 25px;
+    }
+
+    .icon {
+      width: 58px;
+      height: 52px;
+      flex-basis: 58px;
+      margin-right: 25px;
+    }
+
+    .discord,
+    .site-logo {
+      width: 58px;
+    }
+
+    .links { gap: 16px; }
+  }
+</style>
+</head>
+
+<body>
+  <header class="hero">
+    <img
+      class="logo"
+      src="https://file.garden/Z_Zkhskjxktxt43S/Onion%20Tunes/portfolio/oonyintunesitelogo.svg"
+      alt="Onion Tunes logo"
+    >
+  </header>
+
+  <main>
+    <h1>Hi! I’m Onion Tunes!</h1>
+
+    <p class="intro">
+      I make music on Youtube. If you want to use my songs, they are free to use as long as you add credits. I make all genres of music, from calm
+      beats, to breakcore. If you want short tunes, I got you, if you want
+      longer background music, I got it covered, or if you just want to relax,
+      I got it.
+    </p>
+
+    <a class="listen" href="https://onion-tunes.pages.dev/" aria-label="Listen now">
+      LISTEN NOW
+    </a>
+
+    <div class="links">
+      <a class="link" href="https://youtube.com/@onion-tunes/videos?sub_confirmation=1" aria-label="YouTube">
+        <img
+          class="icon"
+          src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small/youtube-logo-youtube-icon-transparent-free-png.png"
+          alt=""
+        >
+        <span>@onion-tunes</span>
+      </a>
+
+      <a class="link" href="https://discord.com/users/1357512682827419830/" aria-label="Discord">
+        <img
+          class="icon discord"
+          src="https://static.vecteezy.com/system/resources/thumbnails/018/930/718/small/discord-logo-discord-icon-transparent-free-png.png"
+          alt=""
+        >
+        <span>@oonyin_yt</span>
+      </a>
+
+      <a class="link" href="https://onion-tunes.pages.dev/" aria-label="Onion Tunes website">
+        <img
+          class="icon site-logo"
+          src="https://file.garden/Z_Zkhskjxktxt43S/Onion%20Tunes/portfolio/oonyintunesitelogo.svg"
+          alt=""
+        >
+        <span>onion-tunes.pages.dev</span>
+      </a>
+    </div>
+  </main>
+</body>
+</html>
